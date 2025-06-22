@@ -36,12 +36,12 @@ function PasswordGen() {
     }, [password])
     return (
         <>
-            <div className='w-full h-screen bg-black text-white'>
-                <h1 className='text-center'>Password Generator</h1>
-                <div className="container max-w-xl text-black-600 mx-auto drop-shadow-lg">
+            <div className='w-full h-screen bg-black text-white pt-32'>
+                <div className="container max-w-xl text-black-600 mx-auto drop-shadow-lg shadow-lg border border-cyan-700 rounded-lg p-7">
+                    <h1 className='text-center text-2xl font-sans font-semibold pb-3'>Password Generator</h1>
                     <div className='flex'>
                         <input type="text"
-                            className='outline-none w-full py-2 px-3 rounded-l-lg text-red-600'
+                            className='outline-none w-full py-2 px-3 rounded-l-lg text-cyan-300'
                             value={password}
                             readOnly
                             ref={passwordRef}
